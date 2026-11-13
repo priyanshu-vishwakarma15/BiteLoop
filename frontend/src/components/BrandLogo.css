@@ -1,0 +1,72 @@
+.biteloop-brand {
+  --brand-mark-size: 40px;
+  --brand-type-size: 21px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.biteloop-brand__mark {
+  display: block;
+  width: var(--brand-mark-size);
+  height: var(--brand-mark-size);
+  overflow: visible;
+  filter: drop-shadow(0 4px 10px rgb(237 63 56 / 24%));
+  transition: transform 180ms ease;
+}
+
+.biteloop-brand:hover .biteloop-brand__mark {
+  transform: rotate(-8deg) scale(1.04);
+}
+
+.biteloop-brand__name {
+  color: var(--color-text);
+  font-size: var(--brand-type-size);
+  font-weight: 800;
+  letter-spacing: -0.07em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.biteloop-brand__name span {
+  color: var(--color-accent);
+}
+
+.biteloop-brand--auth {
+  --brand-mark-size: 42px;
+  --brand-type-size: 22px;
+}
+
+.biteloop-brand--profile,
+.biteloop-brand--create {
+  --brand-mark-size: 40px;
+  --brand-type-size: 19px;
+}
+
+.biteloop-brand--feed {
+  --brand-mark-size: 46px;
+  --brand-type-size: 26px;
+}
+
+.biteloop-brand--store {
+  --brand-mark-size: 38px;
+  --brand-type-size: 22px;
+}
+
+@media (max-width: 420px) {
+  .biteloop-brand--profile,
+  .biteloop-brand--create {
+    --brand-mark-size: 34px;
+    --brand-type-size: 16px;
+    gap: 7px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .biteloop-brand__mark {
+    transition: none;
+  }
+}

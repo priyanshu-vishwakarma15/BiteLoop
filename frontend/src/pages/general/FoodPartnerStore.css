@@ -1,0 +1,111 @@
+.store-page {
+  min-height: 100vh;
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+.store-header {
+  display: flex;
+  height: 76px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(20px, 6vw, 88px);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.store-back-link {
+  color: var(--color-text-muted);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.store-back-link:hover {
+  color: var(--color-accent);
+}
+
+.store-content {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: clamp(36px, 7vw, 76px) 0;
+}
+
+.store-intro {
+  margin-bottom: 34px;
+}
+
+.store-eyebrow {
+  margin-bottom: 9px;
+  color: var(--color-accent);
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.store-intro h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  letter-spacing: -0.045em;
+}
+
+.store-owner {
+  margin-top: 8px;
+  color: var(--color-text-muted);
+  font-size: 15px;
+}
+
+.store-food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 22px;
+}
+
+.store-food-card {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.store-food-card video {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  aspect-ratio: 9 / 12;
+  background: #171615;
+  object-fit: cover;
+}
+
+.store-food-copy {
+  padding: 18px;
+}
+
+.store-food-copy h2 {
+  font-size: 19px;
+  letter-spacing: -0.02em;
+}
+
+.store-food-copy p {
+  margin-top: 8px;
+  color: var(--color-text-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.store-message,
+.store-empty {
+  width: min(640px, calc(100% - 40px));
+  margin: 22vh auto 0;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.store-message a {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--color-accent);
+  font-weight: 650;
+  text-decoration: none;
+}
